@@ -1,0 +1,76 @@
+/* General */
+body {
+	margin: 0;
+}
+
+.section {
+	min-height: 100vh;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Task One */
+.task_one_light {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+.task_one_dark {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+/* Task two */
+.task_two_light {
+	background-color: rgb(98, 107, 201);
+	color: black;
+}
+
+.task_two_dark {
+	background-color: rgb(48, 56, 148);
+	color: white;
+}
+
+.task_two_sunIcon {
+	height: 32px;
+	width: 32px;
+	background-image: url(assets/task_two_sunIcon.png);
+}
+
+.task_two_moonIcon {
+	height: 32px;
+	width: 32px;
+	background-image: url(assets/task_two_moonIcon.png);
+}
+
+/* Task three */
+.task_three_image {
+	max-height: 50%;
+	max-width: 50%;
+}
+
+.task_three_image_big {
+	max-height: 90%;
+	max-width: 90%;
+}
+
+/* Task four */
+.task_four_div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
+}
+
+.task_four_image {
+	max-height: 40%;
+	max-width: 40%;
+}
+
+.task_four_image_big {
+	max-height: 80%;
+	max-width: 80%;
+}
