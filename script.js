@@ -58,36 +58,5 @@ for (let index = 0; index < task_four_images.length; index++) {
 }
 
 // Task five
-let task_five_form = document.querySelector("#task_five_form");
-
-function submitName() {
-	// Prevent the default form submission
-	// OBS: "event" is deprecated, still works, but the strike through means its not necessary the correct use. the shorthand "e" is working, but I like using fullterm.
-	event.preventDefault();
-
-	// Get the input value
-	let task_five_inputName = document.querySelector("#task_five_inputName").value;
-	console.log("Navnet ditt er: " + task_five_inputName);
-
-	// BONUS: (If no statement checks. The statement in else is enough by itself)
-	// Check if the task_five_inputName is empty or undefined, and define a response for either options.
-	if (!task_five_inputName) {
-		console.log("Please write a name!");
-
-		// Display the input value in the paragraph with id task_five_p
-		let task_five_p = document.querySelector("#task_five_p");
-		task_five_p.textContent = "Vennligst skriv et navn";
-	} else {
-		console.log("Gosh what a name!");
-
-		// Display the input value in the paragraph with id task_five_p
-		let task_five_p = document.querySelector("#task_five_p");
-		task_five_p.textContent = "Navnet ditt er: " + task_five_inputName;
-	}
-}
-
-// Add event listener to the form
-let task_five_inputSubmit = document.querySelector("#task_five_inputSubmit");
-task_five_inputSubmit.addEventListener("click", submitName);
 
 // Task six
