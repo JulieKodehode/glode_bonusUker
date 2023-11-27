@@ -4,31 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Gløde Programmering Utvidelse</title>
-
-		<!-- Link til CSS -->
 		<link rel="stylesheet" href="style.css" />
-		<!-- Source til JS -->
 		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<main>
 			<!-- Første uke -->
-			<section class="section">
+			<section id="task_one_section" class="section task_one_light">
 				<!-- 
                I denne seksjonen løser jeg på oppgaven: 
                Lag en knapp som endrer hvilket tema som er aktivt på nettsiden
             -->
 				<h2>Mandag formiddag</h2>
-				<!-- Fyll innhold -->
+				<button id="task_one_button">Trykk på meg</button>
+				<div></div>
 			</section>
 
-			<section class="section">
+			<section id="task_two_section" class="section task_two_light">
 				<!-- 
                I denne seksjonen løser jeg på oppgaven: 
                Lag en knapp som endrer hvilket ikon som viser til hver tema på nettsiden
             -->
 				<h2>Mandag ettermiddag</h2>
-				<!-- Fyll innhold -->
+				<div id="task_two_icon" class="task_two_sunIcon"></div>
+				<div></div>
 			</section>
 
 			<section class="section">
@@ -37,7 +36,12 @@
 					Lag en hendelse effekt som endrer størrelsen på et bilde når bildet trykkes på
 				 -->
 				<h2>Onsdag formiddag</h2>
-				<!-- Fyll innhold -->
+				<img
+					id="task_three_image"
+					class="task_three_image"
+					src="assets/task_three_image.jpg"
+					alt="Mountain" />
+				<div></div>
 			</section>
 
 			<section class="section">
@@ -46,7 +50,13 @@
 					Lag en hendelse effekt som endrer størrelsen på et bilde når bildet trykkes på - men som virker på mer enn ett bilde
 				 -->
 				<h2>Onsdag ettermiddag</h2>
-				<!-- Fyll innhold -->
+				<div class="task_four_div">
+					<img class="task_four_image" src="assets/task_four_image.jpg" alt="Ocean" />
+					<img class="task_four_image" src="assets/task_four_image.jpg" alt="Ocean" />
+					<img class="task_four_image" src="assets/task_four_image.jpg" alt="Ocean" />
+					<img class="task_four_image" src="assets/task_four_image.jpg" alt="Ocean" />
+				</div>
+				<div></div>
 			</section>
 
 			<!-- Andre uke -->
@@ -56,6 +66,14 @@
 				Lag et input som tar i mot et navn, og en submit knapp som poster navnet på nettsiden din
 				-->
 				<h2>Mandag formiddag</h2>
+				<div class="task_five_div">
+					<form id="task_five_form" class="task_five_form">
+						<label for="task_five_inputName">Skriv inn ditt navn</label>
+						<input type="text" name="task_five_inputName" id="task_five_inputName" />
+						<button id="task_five_inputSubmit">Submit</button>
+					</form>
+					<p id="task_five_p"></p>
+				</div>
 				<div></div>
 			</section>
 
@@ -65,7 +83,37 @@
 				Lag flere input som tar i mot ulik informasjon, og en submit knapp som poster informasjonen på nettsiden din.
 				-->
 				<h2>Mandag ettermiddag</h2>
-				<!-- Fyll innhold -->
+				<div class="task_six_div">
+					<form id="task_six_form" class="task_six_form">
+						<label for="task_six_inputName">
+							Skriv inn ditt navn
+							<input type="text" name="task_six_inputName" id="task_six_inputName" />
+						</label>
+
+						<label for="task_six_inputEpost">
+							Skriv inn din epost
+							<input type="text" name="task_six_inputEpost" id="task_six_inputEpost" />
+						</label>
+
+						<label for="task_six_inputPassword"
+							>Skriv inn et passord<input
+								type="text"
+								name="task_six_inputPassword"
+								id="task_six_inputPassword" />
+						</label>
+
+						<label for="task_six_inputPasswordReminder"
+							>Skriv inn en huskeregel for passord<input
+								type="text"
+								name="task_six_inputPasswordReminder"
+								id="task_six_inputPasswordReminder" />
+						</label>
+
+						<button id="task_six_inputSubmit">Submit</button>
+					</form>
+					<ul id="task_six_ul" class="task_six_ul"></ul>
+				</div>
+				<div></div>
 			</section>
 
 			<section class="section">
@@ -74,7 +122,7 @@
 				Lag en en knapp som aktiverer og deaktiverer en drop-down meny
 				-->
 				<h2>Onsdag formiddag</h2>
-				<!-- Fyll innhold -->
+				<div></div>
 			</section>
 
 			<section class="section">
@@ -84,7 +132,7 @@
 				meny
 				 -->
 				<h2>Onsdag ettermiddag</h2>
-				<!-- Fyll innhold -->
+				<div></div>
 			</section>
 		</main>
 	</body>

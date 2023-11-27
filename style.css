@@ -74,3 +74,23 @@ body {
 	max-height: 80%;
 	max-width: 80%;
 }
+
+/* Task five */
+.task_five_div,
+.task_five_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Task six */
+.task_six_div,
+.task_six_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
