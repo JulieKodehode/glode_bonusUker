@@ -144,35 +144,5 @@ let task_six_inputSubmit = document.querySelector("#task_six_inputSubmit");
 task_six_inputSubmit.addEventListener("click", submitForm);
 
 // Task seven
-// HENT
-let task_seven_ul = document.querySelector("#task_seven_ul");
-let task_seven_burgerButton = document.querySelector("#task_seven_burgerButton");
-
-// MODIFISER
-function task_seven_dropDownMenu() {
-	// Activate new class
-	task_seven_ul.classList.toggle("task_seven_navShow");
-
-	// Is button clicked?
-	console.log("Clicked?");
-}
-
-// SEND
-task_seven_burgerButton.addEventListener("click", task_seven_dropDownMenu);
 
 // Task eight
-// HENT
-let task_eight_ul = document.querySelector("#task_eight_ul");
-let task_eight_burgerButton = document.querySelector("#task_eight_burgerButton");
-
-// MODIFISER
-function task_eight_dropDownMenu() {
-	// Activate new class
-	task_eight_ul.classList.toggle("task_eight_navHidden");
-
-	// Is button clicked?
-	console.log("Clicked?");
-}
-
-// SEND
-task_eight_burgerButton.addEventListener("click", task_eight_dropDownMenu);
