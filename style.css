@@ -94,3 +94,110 @@ body {
 	align-items: center;
 	gap: 10px;
 }
+
+/* Task seven */
+.task_seven_fakePhoneScreen {
+	width: 426px;
+	height: 700px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.task_seven_nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column-reverse;
+
+	text-align: end;
+}
+
+.task_seven_ul {
+	list-style-type: none;
+	padding: 5px 0 5px 0;
+}
+
+.task_seven_burgerButton {
+	display: flex;
+	height: 32px;
+	width: 32px;
+	padding: 1em;
+}
+
+/* No show before button click */
+.task_seven_navHidden {
+	display: none;
+	padding: 0 1em 1em 0;
+}
+
+/* Show when button clicked */
+.task_seven_navShow {
+	display: inline;
+	padding: 0 1em 1em 0;
+}
+
+/* Task eight */
+.task_eight_container {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.task_eight_nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.task_eight_ul {
+	list-style-type: none;
+	padding: 5px 0 5px 0;
+	gap: 1em;
+}
+
+.task_eight_burgerButton {
+	display: none;
+	height: 32px;
+	width: 32px;
+	padding: 1em;
+}
+
+/* No show before button click */
+.task_eight_navHidden {
+	display: none;
+	padding: 0 1em 1em 0;
+}
+
+/* Show when button clicked */
+.task_eight_navShow {
+	display: flex;
+	padding: 0 1em 1em 0;
+}
+
+/*  Media query for å aktiveres ved små størrelser */
+@media (max-width: 426px) {
+	/* Default laptop */
+	/* No show before button click */
+	.task_eight_navShow {
+		display: none;
+		padding: 0 1em 1em 0;
+	}
+
+	/* Mobile version */
+	/* Show when button clicked */
+	.task_eight_nav {
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		align-items: flex-end;
+		text-align: end;
+	}
+
+	.task_eight_burgerButton {
+		display: flex;
+	}
+
+	.task_eight_navHidden {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1em 1em 0;
+	}
+}
