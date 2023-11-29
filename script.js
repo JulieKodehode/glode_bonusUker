@@ -144,5 +144,20 @@ let task_six_inputSubmit = document.querySelector("#task_six_inputSubmit");
 task_six_inputSubmit.addEventListener("click", submitForm);
 
 // Task seven
+// HENT
+let task_seven_burgerButton = document.querySelector("#task_seven_burgerButton");
+let task_seven_ul = document.querySelector("#task_seven_ul");
+
+// MODIFISER
+function task_seven_dropDownMenu() {
+	// Is button clicked?
+	console.log("Er bildet/iconet/knappen trykket på???");
+
+	// Activate new class
+	task_seven_ul.classList.toggle("task_seven_navShow");
+}
+
+// SEND
+task_seven_burgerButton.addEventListener("click", task_seven_dropDownMenu);
 
 // Task eight
