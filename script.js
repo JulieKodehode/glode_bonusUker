@@ -161,3 +161,18 @@ function task_seven_dropDownMenu() {
 task_seven_burgerButton.addEventListener("click", task_seven_dropDownMenu);
 
 // Task eight
+// HENT
+let task_eight_ul = document.querySelector("#task_eight_ul");
+let task_eight_burgerButton = document.querySelector("#task_eight_burgerButton");
+
+// MODIFISER
+function task_eight_dropDownMenu() {
+	// Is button clicked?
+	console.log("NOE SKJER MED KNAPPEN!!!!");
+
+	// Activate new class
+	task_eight_ul.classList.toggle("task_eight_navHidden");
+}
+
+// SEND
+task_eight_burgerButton.addEventListener("click", task_eight_dropDownMenu);
